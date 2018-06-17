@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>GONZALO ESCUDERO</title>
+</head>
+<script type="text/javascript" src="java/jquery.js"></script>
+<script type="text/javascript" src="java/java.js"></script>
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+<link rel="stylesheet" type="text/css" href="estilos/estil.css">
+<body>
+<center><img src="imagenes/logo_mago_de_oz.png"></center>
+<div style="color:#FF0000;"><h1>DATOS PERSONALES</h1>
+<ul>
+  <li id="sub"><a href="registro.html">Suscribirse</a></li>
+</ul></div>
+<div id="sideNavigation" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">NOTICIAS</a>
+  <a href="#">BIOGRAFIA </a>
+  <a href="#">DSICOGRAFIA</a>
+  <a href="#">MEDIA</a>
+  <a href="#">CONCIERTOS</a>
+</div>
+<span style=" font-style: ;">
+<div style="color:#FF0000;">
+<nav class="topnav">
+  <a href="#" onclick="openNav()">
+    <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+    </svg>
+  </a>
+</nav>
+<div id="fondo">
+<div id="formular">
+<label><center>Ingrese</center></label>
+<form action="base de datos/conexion.php" method="POST">
+  <br><br><label>Nombre:</label><input type="text" required="nombre" name="nombre" placeholder="Ingrese su nombre">
+  <br><br><br><label>Contraseña:</label><input type="password" required="contraseña" name="contraseña" placeholder="Ingrese su contraseña">
+  <br><br><center><input id="cerrar"  required="datos para ingresar" text="enviar" value="registrarse" ></center>
+ <br><center><input type="submit" value="ENVIAR" required="datos para ingresar"></center>
+</div>
+
+ </form>
+<div id="main">
+</div>
+</div>
+</span>
+</div>
+</body>
+</html>
